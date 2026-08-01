@@ -1,8 +1,25 @@
 aid: rhyme-fka-priorauthnow
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rhyme-fka-priorauthnow.png
 name: Rhyme (fka PriorAuthNow)
-description: 'Rhyme (fka PriorAuthNow) is a company surfaced as a portfolio company of insight-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Rhyme (formerly PriorAuthNow) is a healthcare technology company that eliminates
+  prior authorization burden by automating the exchange between payers and providers. Its
+  platform delivers touchless prior authorization, gold carding (removing auth requirements
+  entirely through payer-provider collaboration), and a shared dashboard for tracking
+  efficiency. Rhyme processes over four million prior authorizations annually and connects
+  83 of the largest US health systems with 300+ payers. The company is backed by Insight
+  Partners and was surfaced to the API Evangelist network as a VC-portfolio lead; it
+  publishes no public developer or API surface as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/rhyme-fka-priorauthnow/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthcare
+- Prior Authorization
+- Health IT
+- Payers
+- Providers
+- Revenue Cycle
+- Automation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +47,16 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://getrhyme.com/
+- type: Website
+  name: Legacy domain (PriorAuthNow)
   url: https://www.priorauthnow.com/
+- type: PrivacyPolicy
+  url: https://getrhyme.com/privacy-policy.html
+- type: DomainSecurity
+  url: security/rhyme-fka-priorauthnow-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
